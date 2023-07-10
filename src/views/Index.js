@@ -53,9 +53,6 @@ function Index() {
           <Carousel />
           <NucleoIcons />
           <CompleteExamples />
-          <SignUp />
-          <Examples />
-          <Download />
         </div>
         <DarkFooter />
       </div>
