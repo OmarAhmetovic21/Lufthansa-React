@@ -34,13 +34,8 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
-              alt="..."
-              className="n-logo"
-              src={require("assets/img/now-logo.png")}
-            ></img>
-            <h1 className="h1-seo">Now UI Kit.</h1>
-            <h3>A beautiful Bootstrap 4 UI kit. Yours free.</h3>
+            <h1 style={{color:"#010165"}}> <b>Welcome to Lufhtansa </b></h1>
+            <h3 style={{color:"#010165"}}> <b>The biggest airline in Germany</b></h3>
           </div>
           
         </Container>
