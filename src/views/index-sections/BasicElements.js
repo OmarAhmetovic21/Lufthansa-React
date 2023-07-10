@@ -1,4 +1,5 @@
 import React from "react";
+import GoogleMapReact from "google-map-react";
 // react plugin used to create switch buttons
 import Switch from "react-bootstrap-switch";
 // plugin that creates slider
@@ -21,6 +22,14 @@ import {
 // core components
 
 function BasicElements() {
+  const BasicElements = ({ text }) => <div>{text}</div>;
+  const defaultProps = {
+    center: {
+      lat: 43.8247,
+      lng: 18.3314
+    },
+    zoom: 11
+  };
   const [leftFocus, setLeftFocus] = React.useState(false);
   const [rightFocus, setRightFocus] = React.useState(false);
   React.useEffect(() => {
@@ -49,11 +58,17 @@ function BasicElements() {
   });
   return (
     <>
-      <div className="section section-basic" id="basic-elements">
-        <Container>
-          <h3 className="title">Basic Elements</h3>
-          <h4>Buttons</h4>
-          <p className="category">Pick your style</p>
+    <div className="section section-basic" id="basic-elements">
+    <Container>
+      <Row>
+      <div style={{ height: '100vh', width: '100%', marginTop:"10%" }}>
+      <button class="btn btn-1" style={{backgroundColor:"#010165"}} type="button">Find Me</button>
+        <GoogleMapReact defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom}>
+          <BasicElements lat={43.8247} lng={18.3314}/>
+       </GoogleMapReact>
+      </div>
+      </Row>
+      <h3 style={{marginTop:"10%"}}>Lufthansa Statistics</h3>
           <Row>
             <Col md="10">
               <Button color="info" type="button">
