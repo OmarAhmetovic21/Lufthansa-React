@@ -47,7 +47,7 @@ function IndexNavbar() {
       <Navbar className={"fixed-top " + navbarColor} expand="lg" style={{background:"#010165"}}>
         <Container>
           <div className="navbar-translate">
-            <NavbarBrand id="navbar-brand" >
+            <NavbarBrand href="index" id="navbar-brand" >
             <img alt="..." style={{height:"30%", width:"30%"}} src={require("assets/img/Color-Lufthansa-Logo.jpg")}></img>
             </NavbarBrand>
             <button
@@ -71,7 +71,7 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink href="#pablo">
+                <NavLink href="/fleet">
                   <h5 style={{color:"#fdb104"}}>Fleet</h5>
                 </NavLink>
               </NavItem>
