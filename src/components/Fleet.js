@@ -9,6 +9,7 @@ import {
   Row,
   Col,
 } from "reactstrap";
+import LandingPageHeader from "./Headers/LandingPageHeader";
 
 // core components
 
@@ -25,23 +26,12 @@ function Fleet() {
   return (
     <>
     <IndexNavbar />
-    <div className="section section-basic" id="basic-elements">
+    <LandingPageHeader />
     <Container>
       <Row>
-      <div style={{ height: '100vh', width: '100%', marginTop:"10%" }}>
-      <button class="btn btn-1" style={{backgroundColor:"#010165"}} type="button">Find Me</button>
-        <GoogleMapReact defaultCenter={defaultProps.center} defaultZoom={defaultProps.zoom}>
-          <BasicElements lat={43.8247} lng={18.3314}/>
-       </GoogleMapReact>
-      </div>
-      </Row>
-      <h3 style={{marginTop:"10%"}}>Lufthansa Statistics</h3>
-         <Row>
             
-         </Row>
-          
-        </Container>
-      </div>
+      </Row>
+    </Container>
     </>
   );
 }
