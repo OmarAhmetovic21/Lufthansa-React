@@ -34,9 +34,6 @@ function LandingPageHeader() {
         <div className="content-center">
           <Container>
           <h2 style={{marginTop:"5%", textAlign:"center", color:"#fdb104"}}><b>Lufthansa Fleet</b></h2>
-            <div className="text-center">
-              
-            </div>
           </Container>
         </div>
       </div>

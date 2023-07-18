@@ -72,7 +72,7 @@ function IndexNavbar() {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="#pablo">
+                <NavLink href="/lounges">
                   <h5 style={{color:"#fdb104"}}>Lounges</h5>
                 </NavLink>
               </NavItem>
