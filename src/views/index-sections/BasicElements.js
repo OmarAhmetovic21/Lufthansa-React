@@ -1,16 +1,13 @@
 import React from "react";
 
 // react plugin used to create switch buttons
-import Switch from "react-bootstrap-switch";
-// plugin that creates slider
-import Slider from "nouislider";
-
 // reactstrap components
 import {
   Container,
   Row,
   Col,
 } from "reactstrap";
+import { Bar } from "react-chartjs-2";
 
 // core components
 
@@ -29,11 +26,13 @@ function BasicElements() {
     <div className="section section-basic" id="basic-elements">
     <Container>
       <h3 style={{marginTop:"10%", color:"#010165"}}><b>Lufthansa Statistics</b></h3>
+      
          <Row>
-            
+         
          </Row>
           
         </Container>
+      
       </div>
     </>
   );
