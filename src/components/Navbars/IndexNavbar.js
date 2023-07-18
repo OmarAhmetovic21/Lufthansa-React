@@ -59,16 +59,12 @@ function IndexNavbar() {
               aria-expanded={collapseOpen}
               type="button"
             >
-              <span className="navbar-toggler-bar top-bar"></span>
-              <span className="navbar-toggler-bar middle-bar"></span>
-              <span className="navbar-toggler-bar bottom-bar"></span>
+              <span style={{backgroundColor:"#fdb104"}} className="navbar-toggler-bar top-bar"></span>
+              <span style={{backgroundColor:"#fdb104"}} className="navbar-toggler-bar middle-bar"></span>
+              <span style={{backgroundColor:"#fdb104"}} className="navbar-toggler-bar bottom-bar"></span>
             </button>
           </div>
-          <Collapse
-            className="justify-content-end"
-            isOpen={collapseOpen}
-            navbar
-          >
+          <Collapse className="justify-content-end" isOpen={collapseOpen} navbar>
             <Nav navbar>
               <NavItem>
                 <NavLink href="/fleet">
@@ -84,14 +80,14 @@ function IndexNavbar() {
               <NavItem>
                 <NavLink href="https://www.facebook.com/Lufthansa" target="_blank" id="facebook-tooltip">
                   <i style={{color:"#fdb104"}} className="fab fa-facebook-square"></i>
-                  <p className="d-lg-none d-xl-none">Facebook</p>
+                  <p style={{color:"#fdb104"}} className="d-lg-none d-xl-none">Facebook</p>
                 </NavLink>
     
               </NavItem>
               <NavItem>
                 <NavLink href="https://www.instagram.com/lufthansa/" target="_blank" id="instagram-tooltip">
                   <i style={{color:"#fdb104"}} className="fab fa-instagram"></i>
-                  <p className="d-lg-none d-xl-none">Instagram</p>
+                  <p style={{color:"#fdb104"}} className="d-lg-none d-xl-none">Instagram</p>
                 </NavLink>
               </NavItem>
             </Nav>
